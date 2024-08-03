@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "View Log";
+}
+
+<h1>Log File View</h1>
+
+<p>File: @ViewBag.FilePath</p>
+<p>Line Number: @ViewBag.LineNumber</p>
+
+<pre>
+    @foreach (var line in ViewBag.Lines)
+    {
+        if (line == ViewBag.LineContent)
+        {
+        <span style="background-color: yellow;">@line</span>
+        }
+        else
+        {
+            @line
+        }
+    }
+</pre>

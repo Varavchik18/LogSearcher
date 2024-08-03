@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LogSearcher.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16c80ae03013ac68210314a2f6e27f5294cb2a72")]
 [assembly: System.Reflection.AssemblyProductAttribute("LogSearcher.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LogSearcher.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
