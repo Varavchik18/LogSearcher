@@ -12,3 +12,4 @@ C:\Users\Alex Colba\source\repos\LogSearcher\LogSearcher\obj\Release\net8.0\refi
 C:\Users\Alex Colba\source\repos\LogSearcher\LogSearcher\obj\Release\net8.0\LogSearcher.pdb
 C:\Users\Alex Colba\source\repos\LogSearcher\LogSearcher\obj\Release\net8.0\LogSearcher.genruntimeconfig.cache
 C:\Users\Alex Colba\source\repos\LogSearcher\LogSearcher\obj\Release\net8.0\ref\LogSearcher.dll
+C:\Users\Alex Colba\source\repos\LogSearcher\LogSearcher\obj\Release\net8.0\LogSearcher.sourcelink.json

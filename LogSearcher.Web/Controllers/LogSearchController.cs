@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.IO;
+using System.Threading.Tasks;
 
 public class LogSearchController : Controller
 {
@@ -17,12 +21,13 @@ public class LogSearchController : Controller
     [HttpPost]
     public async Task<IActionResult> Search(IFormFile fileUpload, string searchPattern)
     {
-        if (fileUpload == null || string.IsNullOrWhiteSpace(searchPattern))
+        if (fileUpload == null)
         {
-            ViewBag.Error = "File and search pattern cannot be empty.";
+            ViewBag.Error = "File must be uploaded.";
             return View("Index");
         }
 
+        // Save the uploaded file to a temporary location
         var tempFilePath = Path.GetTempFileName();
         using (var stream = System.IO.File.Create(tempFilePath))
         {
@@ -31,14 +36,24 @@ public class LogSearchController : Controller
 
         TempData["UploadedFilePath"] = tempFilePath;
 
-        IEnumerable<string> results = await _logSearcherService.SearchAsync(tempFilePath, searchPattern);
+        IEnumerable<string> results;
+
+        if (string.IsNullOrWhiteSpace(searchPattern))
+        {
+            // If no search pattern is provided, read all lines
+            results = await System.IO.File.ReadAllLinesAsync(tempFilePath);
+        }
+        else
+        {
+            // Perform the search using the LogSearcherService
+            results = await _logSearcherService.SearchAsync(tempFilePath, searchPattern);
+        }
 
         ViewBag.Results = results;
         ViewBag.SearchPattern = searchPattern;
 
         return View("Index");
     }
-
 
     public async Task<IActionResult> ViewLog(string filePath, string lineContent)
     {
@@ -57,5 +72,4 @@ public class LogSearchController : Controller
         ViewBag.Lines = lines;
         return View();
     }
-
 }

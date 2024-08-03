@@ -107,3 +107,4 @@ C:\Users\Alex Colba\source\repos\LogSearcher\LogSearcher.Tests\obj\Debug\net8.0\
 C:\Users\Alex Colba\source\repos\LogSearcher\LogSearcher.Tests\obj\Debug\net8.0\LogSearcher.Tests.pdb
 C:\Users\Alex Colba\source\repos\LogSearcher\LogSearcher.Tests\obj\Debug\net8.0\LogSearcher.Tests.genruntimeconfig.cache
 C:\Users\Alex Colba\source\repos\LogSearcher\LogSearcher.Tests\obj\Debug\net8.0\ref\LogSearcher.Tests.dll
+C:\Users\Alex Colba\source\repos\LogSearcher\LogSearcher.Tests\obj\Debug\net8.0\LogSearcher.Tests.sourcelink.json
