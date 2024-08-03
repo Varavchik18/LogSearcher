@@ -8,7 +8,7 @@ BenchmarkDotNet v0.13.11, Windows 10 (10.0.19045.4651/22H2/2022Update)
 
 
 ```
-| Method               | Mean     | Error    | StdDev   | Median   |
-|--------------------- |---------:|---------:|---------:|---------:|
-| SearchErrorPattern   | 22.58 ns | 0.441 ns | 0.542 ns | 22.47 ns |
-| SearchComplexPattern | 42.22 ns | 2.231 ns | 6.107 ns | 44.36 ns |
+| Method               | Mean         | Error        | StdDev       |
+|--------------------- |-------------:|-------------:|-------------:|
+| SearchErrorPattern   |     21.43 ns |     0.358 ns |     0.525 ns |
+| SearchComplexPattern | 19,707.22 ns | 2,531.693 ns | 7,344.900 ns |

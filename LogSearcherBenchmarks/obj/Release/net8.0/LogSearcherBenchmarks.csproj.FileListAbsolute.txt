@@ -97,3 +97,4 @@ C:\Users\Alex Colba\source\repos\LogSearcher\LogSearcherBenchmarks\obj\Release\n
 C:\Users\Alex Colba\source\repos\LogSearcher\LogSearcherBenchmarks\obj\Release\net8.0\LogSearcherBenchmarks.pdb
 C:\Users\Alex Colba\source\repos\LogSearcher\LogSearcherBenchmarks\obj\Release\net8.0\LogSearcherBenchmarks.genruntimeconfig.cache
 C:\Users\Alex Colba\source\repos\LogSearcher\LogSearcherBenchmarks\obj\Release\net8.0\ref\LogSearcherBenchmarks.dll
+C:\Users\Alex Colba\source\repos\LogSearcher\LogSearcherBenchmarks\obj\Release\net8.0\LogSearcherBenchmarks.sourcelink.json
